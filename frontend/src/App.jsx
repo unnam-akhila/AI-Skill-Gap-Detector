@@ -6,8 +6,7 @@ function App() {
   const [role, setRole] = useState('Data Analyst');
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
- const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000';
-
+const API_URL = 'https://ai-skill-gap-detector-x325.onrender.com';
   async function analyzeSkills(event) {
     event.preventDefault();
 
