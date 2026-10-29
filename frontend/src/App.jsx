@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 const API_URL =
-  import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000';
-
+  import.meta.env.VITE_API_URL ||
+  'https://ai-skill-gap-detector-x325.onrender.com';
 function App() {
   const [skills, setSkills] = useState('');
   const [role, setRole] = useState('Data Analyst');
@@ -11,9 +11,6 @@ function App() {
   const [roles, setRoles] = useState([]);
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
-<<<<<<< HEAD
-const API_URL = 'https://ai-skill-gap-detector-x325.onrender.com';
-=======
   const [rolesLoading, setRolesLoading] = useState(true);
 
   useEffect(() => {
@@ -47,7 +44,6 @@ const API_URL = 'https://ai-skill-gap-detector-x325.onrender.com';
     jobRole.toLowerCase().includes(search.toLowerCase())
   );
 
->>>>>>> a7d0c8c (Add job roles and learning roadmap)
   async function analyzeSkills(event) {
     event.preventDefault();
 
