@@ -5,7 +5,7 @@ import './App.css';
   import.meta.env.VITE_API_URL ||
   'https://ai-skill-gap-detector-x325.onrender.com';
 function App() {
-  const [skills, setSkills] = useState('');fetch(
+  const [skills, setSkills] = useState('');
   const [role, setRole] = useState('Data Analyst');
   const [search, setSearch] = useState('');
   const [roles, setRoles] = useState([]);
