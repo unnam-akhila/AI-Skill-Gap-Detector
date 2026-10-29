@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
- const API_URL=
-  import.meta.env.VITE_API_URL ||
-  'https://ai-skill-gap-detector-x325.onrender.com';
+ const API_URL =
+import.meta.env.VITE_API_URL ||
+'https://ai-skill-gap-detector-x325.onrender.com';
 function App() {
   const [skills, setSkills] = useState('');
   const [role, setRole] = useState('Data Analyst');
