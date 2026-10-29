@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
-const API_URL =
+ const API_URL=
   import.meta.env.VITE_API_URL ||
   'https://ai-skill-gap-detector-x325.onrender.com';
 function App() {
-  const [skills, setSkills] = useState('');
+  const [skills, setSkills] = useState('');fetch(
   const [role, setRole] = useState('Data Analyst');
   const [search, setSearch] = useState('');
   const [roles, setRoles] = useState([]);
