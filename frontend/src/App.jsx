@@ -74,15 +74,12 @@ function App() {
       }
 
       setResult(data);
-    } catch (error) {
-      console.error(error);
-
-      alert(
-        'Could not analyze skills. Please check whether the backend is running and try again.'
-      );
-    } finally {
-      setLoading(false);
-    }
+   } catch (error) {
+console.error('Analysis error:', error);
+alert('Analysis failed: ' + error.message);
+} finally {
+setLoading(false);
+}
   }
 
   const matchedSkills = result?.matched_skills || [];
